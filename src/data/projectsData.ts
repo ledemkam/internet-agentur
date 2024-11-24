@@ -1,4 +1,15 @@
-export const projectsData = [
+type IProject = {
+  id: number,
+  title: string,
+  date: string,
+  languages: string[],
+  infos: string,
+  img: string,
+  link: string,
+}
+
+
+export const projectsData : IProject[] = [
   {
     id: 1,
     title: "Casta",
@@ -6,7 +17,7 @@ export const projectsData = [
     languages: ["React", "Php", "Sass"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-2.jpg",
+    img: "/public/img/projet-2.jpg",
     link: "http://www.google.com",
   },
   {
@@ -16,7 +27,7 @@ export const projectsData = [
     languages: ["Symfony", "Vue"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-1.jpg",
+    img: "/public/img/projet-1.jpg",
     link: "http://www.google.com",
   },
   {
@@ -26,7 +37,7 @@ export const projectsData = [
     languages: ["Wordpress", "Php", "React"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-3.jpg",
+    img: "/public/img/projet-3.jpg",
     link: "http://www.google.com",
   },
   {
@@ -36,7 +47,7 @@ export const projectsData = [
     languages: ["Vue", "Php"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-4.jpg",
+    img: "/public/img/projet-4.jpg",
     link: "http://www.google.com",
   },
 ];

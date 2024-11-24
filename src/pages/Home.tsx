@@ -1,3 +1,4 @@
+import Buttons from "../components/Buttons"
 import DynamicText from "../components/DynamicText"
 import Mouse from "../components/Mouse"
 import Navigation from "../components/Navigation"
@@ -16,6 +17,7 @@ export default function Home() {
           <h2><DynamicText/></h2>
         </div>
       </div>
+      <Buttons right={"/projekt-1"} left={""}/>
     </div>
     </>
   )
