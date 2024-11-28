@@ -11,18 +11,13 @@ type TkontaktSchema = {
     message: string;
   };
   
- 
-
-
-const ContactForm = () => {
+ const ContactForm = () => {
 
     const {
         register,
         handleSubmit,
         formState: { errors, isSubmitting },
-        reset,
-       
-        
+        reset,   
       } = useForm<TkontaktSchema>();
     
       const onSubmit: SubmitHandler<TkontaktSchema> = async (data) => {
@@ -31,8 +26,7 @@ const ContactForm = () => {
         reset();
     
       };
-
-
+      
   return (
     <div className="form-container">
         <h2>Uns kontaktieren</h2>
